@@ -1,0 +1,348 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --header-height: 120px;
+}
+
+.interface{
+    
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+
+main{
+    padding-top: 120px; 
+}
+
+@media (max-width: 600px) {
+    main{ padding-top: 100px; }
+}
+
+
+section{
+    
+    scroll-margin-top: calc(var(--header-height) - 10px);
+}
+
+header a{
+    color: #c06b25;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #eaac79;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .Sarah-Contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #e78f47;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .Sarah-Contato button:hover{
+    box-shadow: 0px 0px 8px #f07007;
+}
+
+/* ESTILO TOPO DO SITE */
+
+.minha-foto {
+  position: center;
+  
+  left: 950px;
+  
+  bottom: 15px; 
+}
+section.Topo-do-Site{
+    padding: 40px 4%;
+}
+/* AJUSTAR DEPOIS */
+section.Topo-do-Site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.Topo-do-Site .txt-topo-site h1{
+    color: #fff;
+    text-align: center;
+}
+
+.Topo-do-Site .txt-topo-site p{
+    color: #ffffff;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+.Topo-do-Site .txt-topo-site{
+    color: #fff;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+/* ESTILO PROJETOS */
+
+section.projetos{
+    padding: 30px 4%;
+    color: #fff;
+    text-align: left;
+}
+
+section.projetos .flex{
+    gap: 100px;
+    
+}
+
+section.projetos h2{
+    color: #c06b25;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.projetos .projetos-box{  
+    padding: 40px;
+    border: 2px solid #e78f47;
+    margin-top: 50px;
+    border-radius: 50px;
+    flex: 1; 
+    border-radius: 40px;
+
+}
+
+.projetos .projetos-box i{
+    font-size: 30px;
+}
+
+
+.projetos .projetos-box p{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.projetos .projetos-box:hover{
+    box-shadow: 0 0 8px #ffffff;
+}
+
+/* Sobre mim */
+
+section.Sobre {
+    /* ESPAÇAMENTO NO TOPO */
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+    margin: 40px 4%;
+
+}
+
+/* Ajustes para o título */
+section.Sobre h2 {
+    color: #bc560e; 
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+
+/*ESTILO SOBRE*/
+
+.area-imagem img{
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px;
+    max-width: 100%; 
+    object-fit: cover;
+    border: 2px solid #e78f47;
+}
+
+
+@media (max-width: 600px) {
+    .area-imagem img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+.sobre-conteudo {
+    display: flex;        
+    align-items: center;   
+    justify-content: center; 
+    gap: 70px;             
+}
+
+.texto {
+    max-width: 600px;
+    padding: 0 20px;
+    
+}
+
+.texto p{
+    color: #fff;
+}
+
+/*curriculo*/
+.curriculo {
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #57381f; 
+    color: #c57f3f; 
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+.curriculo:hover {
+    background-color: #f6b580; 
+    color: #e78f47; 
+}
+
+section.video {
+    padding-top: 80px; 
+    padding-bottom: 60px;
+    text-align: center; 
+}
+
+.video-titulo {
+    margin-bottom: 30px; 
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    color: #f07007;
+    font-size: 25px; 
+    font-weight: bold; 
+    line-height: 1.4;  
+}
+
+
+section.video .video-container iframe {
+    display: block !important;
+    margin: 0 auto !important;
+    border: none !important;
+    border-radius: 8px !important;
+    width: 100% !important;       
+    max-width: 560px !important; 
+    height: auto !important;      
+    aspect-ratio: 16/9 !important; 
+    object-fit: cover !important;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+section.video .video-container { text-align: center; }
+
+/* ESTILO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #f07007;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e78f47;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px #c89868;
+}
+
+footer .line-footer p i{
+    color: #dd8d4a;
+    font-size: 22px;
+
+}
+
+    footer .line-footer p a{
+    color: #fff;
+}
+
+
+
